@@ -5,7 +5,7 @@ description = "A Streamlit app for stunting prediction using TensorFlow Decision
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"  # Menyesuaikan versi Python yang lebih spesifik
+python = ">=3.8,<3.12"
 streamlit = "^1.24.0"
 tensorflow = "^2.13.0"
 tensorflow-decision-forests = "^1.5.0"
@@ -17,10 +17,4 @@ black = "^23.0.0"
 pytest = "^7.0.0"
 
 [tool.streamlit]
-# Streamlit specific configurations
 server = { headless = true }
-
-[[tool.poetry.source]]
-name = "PyPI"
-url = "https://pypi.org/simple"
-priority = "primary"
