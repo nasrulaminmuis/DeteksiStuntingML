@@ -5,7 +5,7 @@ description = "A Streamlit app for stunting prediction using TensorFlow Decision
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.13"  # Mengubah batasan versi untuk mendukung Python 3.12
+python = ">=3.8,<3.9.7 || >3.9.7,<3.13"  # Menyesuaikan dengan requirement Streamlit
 streamlit = "^1.24.0"
 tensorflow = "^2.13.0"
 tensorflow-decision-forests = "^1.5.0"
