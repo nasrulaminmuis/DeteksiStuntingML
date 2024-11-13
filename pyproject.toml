@@ -5,16 +5,14 @@ description = "A Streamlit app for stunting prediction using TensorFlow Decision
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.9.7 || >3.9.7,<3.13"  # Menyesuaikan dengan requirement Streamlit
-streamlit = "^1.24.0"
-tensorflow = "^2.13.0"
-tensorflow-decision-forests = "^1.5.0"
-pandas = "^2.0.0"
-numpy = "^1.24.0"
+python = ">=3.10,<3.11"  # Streamlit Cloud mendukung Python 3.10
+streamlit = ">=1.24.0"
+numpy = ">=1.23.0"
+pandas = ">=1.5.0"
+tensorflow = ">=2.12.0"
+tensorflow-decision-forests = ">=1.5.0"
+protobuf = ">=3.20.0"  # Menambahkan protobuf untuk kompatibilitas TensorFlow
 
-[tool.poetry.dev-dependencies]
-black = "^23.0.0"
-pytest = "^7.0.0"
-
-[tool.streamlit]
-server = { headless = true }
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
