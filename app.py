@@ -48,7 +48,7 @@ def predict_stunting(data):
     predictions = infer_fn(**input_data)  # Menggunakan input sebagai keyword arguments
     
     # Mengambil hasil prediksi (sesuaikan dengan nama output model Anda)
-    stunting_prediction = int(predictions["output_1"][0] > 0.5)  # Sesuaikan nama output
+    stunting_prediction = int(predictions["output_1"][0] > 0.7)  # Sesuaikan nama output
     return "stunting" if stunting_prediction == 1 else "tidak stunting"
 
 
